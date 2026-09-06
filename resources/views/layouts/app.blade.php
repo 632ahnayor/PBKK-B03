@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@yield('title', 'PBKK')</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<style>
 		* { box-sizing: border-box; }
 		body {
@@ -13,30 +14,14 @@
 			flex-direction: column;
 			font-family: Arial, sans-serif;
 		}
-		nav {
-			padding: 1rem clamp(1rem, 4vw, 2rem);
-			background: #0054ca;
-		}
-		.nav-links {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: flex-start;
-			gap: clamp(1rem, 4vw, 3rem);
-		}
-		.nav-links a {
-			color: white;
-			text-decoration: none;
-			font-weight: bold;
-			padding: 0.25rem 0;
-		}
 		main {
 			flex: 1;
-			padding: 2rem;
 		}
-		.welcome,
+		.welcome {
+            font-size: 2rem;
+        }
 		.identitas {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	</style>
 </head>
@@ -46,5 +31,6 @@
 	<main>
 		@yield('content')
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
