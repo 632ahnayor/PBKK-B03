@@ -32,6 +32,12 @@ class PageController extends Controller
         } elseif ($operasi=='pangkat') {
             $hasil = $angka1 ** $angka2;
         };
-        return 'Hasil dari '.htmlspecialchars($angka1).' '.htmlspecialchars($operasi).' '.htmlspecialchars($angka2).' adalah '.htmlspecialchars($hasil).'. (Operasi yang tersedia "tambah", "kurang", "kali", "bagi", "modulo", "pangkat")';
+        
+        return view('kalkulator', [
+            'angka1' => $angka1,
+            'angka2' => $angka2,
+            'operasi' => $operasi,
+            'hasil' => $hasil
+        ]);    
     }
 }

@@ -9,7 +9,7 @@
 				<a class="nav-link" href="{{ url('/') }}">Home</a>
 				<a class="nav-link" href="{{ url('/about') }}">About</a>
 				<a class="nav-link" href="{{ url('/project-idea') }}">Project</a>
-				<a class="nav-link" href="{{ url('/hitung/1/3/bagi') }}">Kalkulator</a>
+				<a class="nav-link" href="{{ url('/hitung/5/2/kali') }}">Kalkulator</a>
 			</div>
 		</div>
 	</div>
