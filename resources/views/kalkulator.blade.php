@@ -36,6 +36,10 @@
             <p>
                 Hasil dari {{ $angka1 }} {{ $operasi }} {{ $angka2 }} adalah <strong>{{ $hasil }}</strong>
             </p>
+
+            <p>
+                Operasi yang tersedia: tambah, kurang, kali, bagi, modulo, pangkat.
+            </p>
         </div>
     </div>
 </div>
