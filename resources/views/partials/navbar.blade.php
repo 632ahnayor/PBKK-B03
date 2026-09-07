@@ -6,10 +6,10 @@
 		</button>
 		<div class="collapse navbar-collapse" id="mainNavbar">
 			<div class="navbar-nav">
-				<a class="nav-link" href="{{ url('/') }}">Home</a>
-				<a class="nav-link" href="{{ url('/about') }}">About</a>
-				<a class="nav-link" href="{{ url('/project-idea') }}">Project</a>
-				<a class="nav-link" href="{{ url('/hitung/5/2/kali') }}">Kalkulator</a>
+				<a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
+				<a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="{{ url('/about') }}">About</a>
+				<a class="nav-link {{ request()->is('project-idea') ? 'active' : '' }}" href="{{ url('/project-idea') }}">Project</a>
+				<a class="nav-link {{ request()->is('hitung/*') ? 'active' : '' }}" href="{{ url('/hitung/5/2/kali') }}">Kalkulator</a>
 			</div>
 		</div>
 	</div>
